@@ -1,0 +1,48 @@
+
+
+
+
+<script>
+
+let controlador = 2; 
+
+let numeros = [5, 2, 8];
+let ordenar = [];
+
+let maior = numeros.map(Number).reduce(function(a, b) {
+  return Math.max(a, b);
+});
+
+console.log(maior)
+
+
+switch(controlador) {
+    
+     case 1 :
+        for (let i = 0; i < numeros.length; i++) {
+            ordenar.push(numeros[i]);
+        }
+        let res = ordenar.sort()
+        
+         console.log(res);
+         break;
+
+    case 2 :
+        for (let i = 0; i < numeros.length; i++) {
+            ordenar.push(numeros[i]);
+        }
+        let res2 = ordenar.sort((a, b) => b - a)
+        
+         console.log(res2);
+         break;
+
+    case 3 :
+        
+        let res3 = numeros[0] 
+        
+         console.log(res3);
+         break;
+ }
+
+</script>
+
