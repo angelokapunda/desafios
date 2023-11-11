@@ -1,27 +1,19 @@
 
 
-let numeros = [4,5,3,7,6,4,9,10];
+let numeros = [4,5,3,7,6,4,9,3];
 
 function recebeNumeros(numeros) {
 
-    let divisivel = [];
+    let numerosOrdenados = numeros.sort((a,b) => b -a);
+
     for (let i = 0; i < numeros.length; i++) {
         
-        if (numeros[i] % 2 == 0) {
-            divisivel.push(numeros[i])
-        } 
+        if ((numeros[i] % 2) == 0) {
+            console.log(numerosOrdenados)
+        }
+        
     }
     
-    let resultado = divisivel.sort((a, b) => b - a)
-
-    return resultado;
 }
 
 console.log(recebeNumeros(numeros));
-
-
-// if (numeros[i] % 2 == 0) {
-        //     return numeros.sort((a,b) => b - a);
-        // }else {
-        //     console.log("Não são multiplos de 2")
-        // }
